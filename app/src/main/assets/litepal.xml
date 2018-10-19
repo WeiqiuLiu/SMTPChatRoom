@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="FGDATAStore" ></dbname>
+
+    <version value="10" ></version>
+
+    <list>
+        <mapping class="VMail.Entity.Groups"></mapping>
+        <mapping class="VMail.Entity.Friends"></mapping>
+        <mapping class="VMail.Entity.ChatMsgEntity"></mapping>
+        <mapping class="VMail.Entity.Requests"></mapping>
+    </list>
+</litepal>

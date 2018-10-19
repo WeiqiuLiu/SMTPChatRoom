@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="VMail">
+
+    <!-- To auto-complete the email text field in the login form with Useruser's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:label="@string/app_name"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+        <activity
+            android:name="VMail.Activity.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/LoginTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="VMail.Activity.MainActivity"
+            android:label="Main"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="VMail.Activity.ChatActivity"
+            android:label="Message"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="VMail.Activity.AddContactActivity"
+            android:label="Add contact"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="VMail.Activity.AddContactActivity2"
+            android:label="Write hello words"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="VMail.Activity.NewGroupActivity"
+            android:label="New group"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="VMail.Activity.GroupManActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="VMail.Activity.BlockMembersActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="VMail.Activity.SelectGalleryActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name="VMail.Activity.DisplayActivity"
+            android:theme="@style/AppTheme" ></activity>
+    </application>
+
+</manifest>
